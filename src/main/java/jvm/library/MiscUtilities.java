@@ -3,7 +3,10 @@
  */
 package jvm.library;
 
-public class Library {
+import org.apache.commons.lang3.StringUtils;
+
+public class MiscUtilities {
+    StringBuilder retString;
     private static int internalValue = 5;
     public boolean someLibraryMethod() {
         return true;
@@ -12,7 +15,10 @@ public class Library {
         return internalValue = internalValue * multiplicatorValue;
     }
     public String getStringContenated(String value1, String value2){
-        StringBuilder retString = new StringBuilder();
+        retString = new StringBuilder();
         return retString.append(value1).append(" ").append(value2).toString();
+    }
+    public boolean isStringEmpty(String valueToCheck) {
+        return StringUtils.isNotEmpty(valueToCheck);
     }
 }
