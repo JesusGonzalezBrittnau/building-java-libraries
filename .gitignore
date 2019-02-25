@@ -1,4 +1,5 @@
 # exclude not needed directories
 .gradle/
 .idea/
+build/
 out/
