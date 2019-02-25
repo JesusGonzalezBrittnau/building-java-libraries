@@ -8,9 +8,9 @@ import static org.junit.Assert.*;
 
 public class MiscUtilitiesTest {
     // Some mocked data
-    private static String getSomeStringValue1 = "Hello";
-    private static String getSomeStringValue2 = "World";
-    private static int someIntegerValue       = 3;
+    private static String someStringValue1 = "Hello";
+    private static String someStringValue2 = "World";
+    private static int    someIntegerValue = 3;
 
     // Class to Test
     private MiscUtilities utilitiesLibrary = new MiscUtilities();
@@ -23,9 +23,9 @@ public class MiscUtilitiesTest {
     }
     @Test public void testGetStringConcatenated() {
         assertEquals("should return \"Hello World\"", "Hello World",
-                utilitiesLibrary.getStringContenated(getSomeStringValue1, getSomeStringValue2));
+                utilitiesLibrary.getStringContenated(someStringValue1, someStringValue2));
     }
     @Test public void testIsStringEmpty() {
-        assertTrue("schould not be empty", utilitiesLibrary.isStringEmpty(utilitiesLibrary.getStringContenated(getSomeStringValue1, getSomeStringValue2)));
+        assertTrue("schould not be empty", utilitiesLibrary.isStringEmpty(utilitiesLibrary.getStringContenated(someStringValue1, someStringValue2)));
     }
 }
