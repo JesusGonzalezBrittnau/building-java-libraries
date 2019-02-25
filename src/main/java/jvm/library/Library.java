@@ -8,7 +8,7 @@ public class Library {
     public boolean someLibraryMethod() {
         return true;
     }
-    public int getCalculated(int multiplic){
-        return internalValue = internalValue * multiplic;
+    public int getCalculated(int multiplicatorValue){
+        return internalValue = internalValue * multiplicatorValue;
     }
 }

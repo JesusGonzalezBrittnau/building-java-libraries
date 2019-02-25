@@ -13,6 +13,6 @@ public class LibraryTest {
     }
     @Test public void testLibraryCalc() {
         Library calculateTest = new Library();
-        assertEquals( "value should be 15", 15, calculateTest.getCalculated(3));
+        assertEquals( "getCalculated should return 15", 15, calculateTest.getCalculated(3));
     }
 }
