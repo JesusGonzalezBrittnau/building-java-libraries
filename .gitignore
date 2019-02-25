@@ -1,0 +1,4 @@
+# exclude not needed directories
+.gradle/
+.idea/
+out/
