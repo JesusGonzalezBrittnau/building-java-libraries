@@ -9,10 +9,14 @@ import static org.junit.Assert.*;
 public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+        assertTrue("should return 'true'", classUnderTest.someLibraryMethod());
     }
     @Test public void testLibraryCalc() {
         Library calculateTest = new Library();
-        assertEquals( "getCalculated should return 15", 15, calculateTest.getCalculated(3));
+        assertEquals( "should return 15", 15, calculateTest.getCalculated(3));
+    }
+    @Test public void testGetStringConcatenated() {
+        Library concatenateStrings = new Library();
+        assertEquals("should return \"Hello World\"", "Hello World", concatenateStrings.getStringContenated("Hello", "World"));
     }
 }

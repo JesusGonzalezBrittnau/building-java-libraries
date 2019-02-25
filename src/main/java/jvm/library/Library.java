@@ -11,4 +11,8 @@ public class Library {
     public int getCalculated(int multiplicatorValue){
         return internalValue = internalValue * multiplicatorValue;
     }
+    public String getStringContenated(String value1, String value2){
+        StringBuilder retString = new StringBuilder();
+        return retString.append(value1).append(" ").append(value2).toString();
+    }
 }
